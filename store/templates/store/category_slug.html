@@ -1,0 +1,44 @@
+{% extends 'store/base.html' %}
+
+<!--Title-->
+{% block title %}
+Category slug
+{% endblock title %}
+<!--end of Title-->
+
+{% block content %}
+
+<h1>Category "{{category|title}}"</h1>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {% if products %}
+            {% for product in products %}
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="img-fluid" src="{{product.image.url}}" alt="Responsive image">
+
+                    <div class="card-body">
+                        <p class="card-text">{{product.title}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-sm btn-outline-secondary"
+                                        href="{{product.get_absolute_url}}">View</a>
+
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <p>This category doesn't have any products</p>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
