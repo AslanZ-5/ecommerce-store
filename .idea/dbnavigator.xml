@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb">
-        <schema name="main" object-types="index, dataset trigger, view, column, table, constraint" />
+        <schema name="main" object-types="table, view, constraint, dataset trigger, column, index" />
       </connection>
     </loaded-nodes>
   </component>
@@ -39,7 +39,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" object-ref="schemas/main/tables/store_product" />
+      <object connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" object-ref="schemas/main/tables/django_session" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -50,6 +50,7 @@
     <filter-actions connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" dataset="main.store_category" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" dataset="main.store_product" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" dataset="main.django_session" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="6ecdca24-25cc-4270-9171-b8d62b8c26bb" dataset="main.django_admin_log" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
